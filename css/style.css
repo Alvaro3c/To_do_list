@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.createTask {
+    background-color: rgb(180, 180, 180);
+    padding: 15px;
+}
+
+.createTask div h2 {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.searchTask {
+    background-color: black;
+    padding: 15px;
+}
