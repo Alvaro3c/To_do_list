@@ -15,8 +15,8 @@ toDoTasks = [
 
     {
         'idtask': 2,
-        'title': 'regar plantas',
-        'priority': 'semanal'
+        'title': 'salir a comer',
+        'priority': 'mensual'
     },
 
     {
