@@ -3,25 +3,25 @@ let toDoTasks = new Array
 toDoTasks = [
     {
         'idtask': 0,
-        'title': 'estudiar javascript',
+        'title': 'Estudiar javascript',
         'priority': 'urgente'
     },
 
     {
         'idtask': 1,
-        'title': 'pasear al perro',
+        'title': 'Pasear al perro',
         'priority': 'diaria'
     },
 
     {
         'idtask': 2,
-        'title': 'salir a comer',
+        'title': 'Salir a comer',
         'priority': 'mensual'
     },
 
     {
         'idtask': 3,
-        'title': 'pagar impuestos',
+        'title': 'Pagar impuestos',
         'priority': 'urgente'
     }
 
