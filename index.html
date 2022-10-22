@@ -13,19 +13,36 @@
 <body>
     <main>
 
-        <section class="crearTarea">
-            <input type="text">
+        <section class="createTask">
+            <form>
+                <input type="text" placeholder="introduce una tarea">
+                <select name="prioridad" id="priority">
+                    <option value="" selected>Selectiona una prioridad</option>
+                    <option value="urg">URGENTE</option>
+                    <option value="di">diaria</option>
+                    <option value="me">mensual</option>
+                </select>
+                <button>guardar</button>
+            </form>
 
-            <button>guardar</button>
             <div>
                 <h2>Debes completar todos los campos</h2>
             </div>
         </section>
 
 
-        <section class="buscarTarea">
+        <section class="searchTask">
+            <form action="">
+                <select name="prioridad" id="searchPriority">
+                    <option value="" selected> selecciona una prioridad</option>
+                    <option value="">URGENTE</option>
+                    <option value="">diaria</option>
+                    <option value="">mensual</option>
 
-            <input type="text">
+                </select>
+                <input type="text">
+            </form>
+
         </section>
         <section class="tareas">
             <div><button>enviar</button></div>
