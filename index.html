@@ -15,14 +15,14 @@
 
         <section class="createTask">
             <form>
-                <input type="text" placeholder="introduce una tarea">
-                <select name="prioridad" id="priority">
-                    <option value="" selected>Selectiona una prioridad</option>
-                    <option value="urg">URGENTE</option>
-                    <option value="di">diaria</option>
-                    <option value="me">mensual</option>
+                <input type="text" placeholder="introduce una tarea" id="inputTask">
+                <select name="prioridad" id="inputPriority">
+                    <option value="" selected>Seleciona una prioridad</option>
+                    <option value="urgente">URGENTE</option>
+                    <option value="diaria">diaria</option>
+                    <option value="mensual">mensual</option>
                 </select>
-                <button>guardar</button>
+                <button id="buttonSave">guardar</button>
             </form>
 
             <div>
@@ -32,44 +32,23 @@
 
 
         <section class="searchTask">
-            <form action="">
+            <form>
                 <select name="prioridad" id="searchPriority">
                     <option value="" selected> selecciona una prioridad</option>
-                    <option value="">URGENTE</option>
-                    <option value="">diaria</option>
-                    <option value="">mensual</option>
-
+                    <option value="urgente">URGENTE</option>
+                    <option value="diaria">diaria</option>
+                    <option value="mensual">mensual</option>
                 </select>
-                <input type="text">
+                <input type="text" placeholder="Tarea a buscar" id="searchInput">
             </form>
 
         </section>
-        <section class="tasks"></section>
+        <section class="tasks">
+
+
+        </section>
     </main>
 
-
-    <!-- asi se hace un formulario en condiciones, de nada -->
-
-    <!--     <form action="" method="" id="formulario">
-        <div class="form-control">
-            <label>Nombre</label>
-            <input type="text" id="inputNombre">
-        </div>
-        <div class="form-control">
-            <label>País</label>
-            <select id="selectPais">
-                <option value="es">España</option>
-                <option value="fr">Francia</option>
-                <option value="ge">Alemania</option>
-                <option value="po">Portugal</option>
-            </select>
-        </div>
-        <div class="form-control">
-            <label>Edad</label>
-            <input type="range" id="inputEdad" min="0" max="100" step="1">
-        </div>
-        <input type="submit" value="Enviar">
-    </form> -->
 
 
 

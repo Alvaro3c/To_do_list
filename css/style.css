@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 * {
     padding: 0px;
     margin: 0px;
@@ -5,12 +7,12 @@
 }
 
 .createTask {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(255, 204, 108);
     padding: 15px;
 }
 
 .createTask div h2 {
-    background-color: red;
+    background-color: orange;
     color: white;
     text-align: center;
 }
@@ -18,4 +20,39 @@
 .searchTask {
     background-color: black;
     padding: 15px;
+}
+
+.task-item {
+    background-color: rgb(0, 194, 194);
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task-item p {
+    font-size: 20px;
+}
+
+.task-item button {
+    background-color: orange;
+    color: white;
+}
+
+.task-item p,
+.task-item button {
+    padding: 20px;
+
+}
+
+.urgent {
+    background-color: tomato;
+}
+
+.dialy {
+    background-color: teal;
+}
+
+.monthly {
+    background-color: lightblue;
 }
