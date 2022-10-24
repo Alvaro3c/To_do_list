@@ -33,6 +33,9 @@ function createTemplateTask(task) {
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Eliminar';
     deleteButton.id = task.idtask;
+    deleteButton.addEventListener('click', (event) => {
+        div.remove()
+    })
 
     p.textContent = task.title;
     div.className = 'task-item ' + priorityClassName;
