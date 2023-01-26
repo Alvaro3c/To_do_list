@@ -7,7 +7,7 @@ const buttonSave = document.getElementById('buttonSave');
 
 buttonSave.addEventListener('click', (event) => {
 
-    event.preventDefault(); // prevents the default behaviour of the button (prvents refreshing the page)
+    event.preventDefault();
 
     let task = {};
     task.idtask = tasksContainer.children.length;
@@ -15,7 +15,7 @@ buttonSave.addEventListener('click', (event) => {
     task.priority = document.getElementById('inputPriority').value;
 
     if (task.title != "" && task.priority != "") {
-        // if the user has entered a title and has chosen a priority
+
         toDoTasks.push(task);
         const taskTemplate = createTemplateTask(task);
         tasksContainer.appendChild(taskTemplate);
@@ -23,9 +23,7 @@ buttonSave.addEventListener('click', (event) => {
 })
 
 
-/* 1.funcion para crear una estructura; creamos un div, p y boton; introducimos texto en el boton ya que es generico; asociamos el boton al id del array llamado idtask, ya que se de eso depende. Asociamos el contenido del texto dentro del p al title. TASK ES UNA TAREA. Damos una clase al div que va a contener el p y el boton para los estilos de CSS. le decimos que el div contiene la p y el boton. pedimos que retorne todo lo que hemos hecho
-*
-*/
+
 function createTemplateTask(task) {
     const priorityClassName = todoBackgroundColorClases[task.priority.toLowerCase()]
     const div = document.createElement('div');
@@ -50,15 +48,11 @@ function createTemplateTask(task) {
 
 
 
-/* creamos la constante taskContainer para asignar el espacio donde queremos que se ejecute la funcion createTemplateTask
 
-*/
 const tasksContainer = document.querySelector('.tasks');
 
 
-/* recorremos el array, la otra opcion es pintarlo todo uno mismo, y no es practico. creamos la constante taskTemplate que es igual a la funcion que hemos hecho arriba . Con task container 
 
-*/
 
 for (let task of toDoTasks) {
     const taskTemplate = createTemplateTask(task);
@@ -84,8 +78,8 @@ function searchAndFilter() {
     if (!searchInputText || !priority) return;
 
     tasksContainer.innerHTML = toDoTasks
-        .filter(task => task.title.includes(searchInput) && task.priority === priority) // TODO change the condition to only filter out the provided values, for example if user does not provide priority there is no need on checking if priorities matches and the same for the text title. It will be a good idea to do this check in a variable that can be reuse inside the filter function.
-        .map(task => createTemplateTask(task)).join(',')
+        .filter(task => task.title.includes(searchInput) && task.priority === priority)
+        .map(task => createTemplateTask(task)).join(task.title, task.priority)
 
 }
 
